@@ -1,0 +1,452 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  opacity: 0.95;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  padding: 10px, 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+nav.black {
+  background: rgb(43, 37, 37);
+  height: 60px;
+}
+
+nav .logo {
+  float: left;
+  z-index: 5;
+}
+
+nav .logo img {
+  height: 350px;
+  transition: 0.5s;
+  z-index: 5;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+nav.black .logo img {
+  height: 60px;
+  float: left;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  z-index: 5;
+}
+
+nav ul li {
+  list-style: none;
+  z-index: 5;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #fff;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+nav.black ul li a {
+  color: fff;
+  line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #fff;
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 4;
+}
+
+.beer1,
+.beer2,
+.beer3,
+.beer4 {
+  max-width: 40%;
+  max-height: 40%;
+  z-index: 2;
+}
+
+.beer1:hover,
+.beer2:hover,
+.beer3:hover,
+.beer4:hover {
+  transform: scaleY(1.2) scaleX(1.2);
+}
+
+.column p:hover {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.beerType1,
+.beerType2,
+.beerType3,
+.beerType4 {
+  background-color: rgb(43, 37, 37);
+  border: none;
+  color: rgba(204, 204, 204, 0.76);
+  z-index: 1;
+}
+
+.beerType1 .detailText {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.beerType2 .detailText {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.beerType3 .detailText {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.beerType4 .detailText {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.row {
+  display: flex;
+  z-index: 0;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0.5px;
+  z-index: 0;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  flex: 33.33%;
+  padding: 0.5px;
+  z-index: 0;
+}
+
+.pimg1 {
+  background-image: url("/imgs/img12.jpeg");
+  min-height: 100%;
+  z-index: 0;
+}
+
+.pimg2 {
+  background-image: url("/imgs/img2.jpg");
+  min-height: 400px;
+  z-index: 0;
+}
+
+.pimg3 {
+  background-image: url("/imgs/img7.jpeg");
+  min-height: 400px;
+  z-index: 0;
+}
+
+.pimg4 {
+  background-image: url("/imgs/img5.jpeg");
+  min-height: 400px;
+  z-index: 0;
+}
+
+.pimg1 {
+  background-image: url("/imgs/img12.jpeg");
+  min-height: 100%;
+  z-index: 0;
+}
+
+.section {
+  text-align: center;
+  padding: 10px 80px;
+  z-index: -1;
+}
+
+.sectionOne {
+  background-color: rgb(43, 37, 37);
+  color: rgba(204, 204, 204, 0.76);
+  z-index: -1;
+}
+
+/*This is for the Rotating text*/
+.rotate {
+  font-family: "Spectral SC";
+  font-size: 43px;
+  width: 100%;
+  left: 10%;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.rotate > span {
+  float: left;
+  margin-right: 0.3em;
+  height: 1.2em;
+}
+
+.rotate > span:last-of-type {
+  font-weight: 500;
+  display: inline-block;
+  color: #5a8243;
+  position: relative;
+  white-space: nowrap;
+  bottom: 0;
+  left: 0;
+  animation: ticker 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+@keyframes ticker {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 1.2em;
+  }
+  30% {
+    bottom: 1.2em;
+  }
+  40% {
+    bottom: 2.4em;
+  }
+  50% {
+    bottom: 2.4em;
+  }
+  60% {
+    bottom: 3.6em;
+  }
+  70% {
+    bottom: 3.6em;
+  }
+}
+/*Continuing the section properties*/
+.sectionTwo {
+  background-color: rgb(43, 37, 37);
+  color: rgba(204, 204, 204, 0.76);
+  z-index: -1;
+}
+
+.sectionThree {
+  background-color: rgb(43, 37, 37);
+  color: rgba(204, 204, 204, 0.76);
+  z-index: -1;
+}
+
+/*This is for the line breaks in the 'About' section*/
+
+.divider1 {
+  position: relative;
+  left: -0.5%;
+  top: 10%;
+  bottom: 10%;
+  border-left: 1px solid rgba(204, 204, 204, 0.76);
+  z-index: 1;
+}
+
+.divider2 {
+  position: relative;
+  left: 0.5%;
+  top: 10%;
+  bottom: 10%;
+  border-left: 1px solid rgba(204, 204, 204, 0.76);
+  z-index: 1;
+}
+
+.sectionFour {
+  background-color: rgb(43, 37, 37);
+  color: rgba(204, 204, 204, 0.76);
+  z-index: 1;
+}
+
+/*Instagram Feed*/
+#instafeed {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#instafeed a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  background: rgb(43, 37, 37);
+}
+
+a:visited {
+  color: rgba(204, 204, 204, 0.76);
+}
+
+#instafeed a img {
+  display: block;
+  width: 100%;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 4vw;
+  font-family: "IM Fell English SC", serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  z-index: -7;
+}
+
+.border {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  z-index: -7;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+  z-index: -7;
+}
+
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*CSS FOR POPUP*/
+.popup-lp {
+  background-color: rgb(43, 37, 37);
+  padding: 35px;
+}
+
+button.my_popup_close {
+  float: right;
+  font-family: "Oranienbaum";
+  font-size: 18px;
+  color: rgb(143, 143, 143);
+  padding: 0.1rem 1rem;
+  border: 1px #ccc solid;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: rgb(43, 37, 37);
+}
+
+button.my_popup_close:hover {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.input-pop {
+  text-align: center;
+  font-size: 19px !important;
+  background-color: rgb(143, 143, 143) !important;
+}
+
+.btn-pop {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(43, 37, 37);
+  line-height: 2.4em;
+}
+
+#button {
+  font-family: "Oranienbaum";
+  font-size: 18px;
+  color: rgb(143, 143, 143);
+  padding: 0.1rem 1rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: rgb(43, 37, 37);
+}
+
+#button:hover {
+  background: rgba(89, 61, 61, 0.687);
+}
+
+.stevepic {
+  max-width: 80vw;
+  position: center;
+}
+
+/*MOBILE SHIT*/
+
+@media (max-width: 568px) {
+  nav.black {
+    background: rgb(43, 37, 37);
+    height: 200px;
+  }
+
+  nav .logo {
+    position: center;
+  }
+
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
+  }
+
+  .ptext {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .rotate {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  #instafeed a {
+    width: 25%;
+  }
+}
